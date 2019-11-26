@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <div>
-      <Form></Form>
+      <Form todos={todos} setTodos={setTodos}></Form>
       <List todos={todos}></List>
     </div>
   );
