@@ -8,7 +8,10 @@ const Form = (props) => {
 
         //新たなtodoリストを作成
         const newTodos = props.todos.slice()
-        newTodos.push(e.target.desc.value)
+        newTodos.push({
+            id: props.todos.length,
+            desc: e.target.desc.value
+        })
         //todoリストを更新
         props.setTodos(newTodos)
     }

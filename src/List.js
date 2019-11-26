@@ -6,7 +6,7 @@ const List = (props) => {
     // mapをして繰り返し処理を行っている。
     const todos = props.todos.map((todo, i)=>{
         return (
-            <Item todo={todo}></Item>
+            <Item todos={props.todos} todo={todo} setTodos={props.setTodos}></Item>
         )
     });
     return (
