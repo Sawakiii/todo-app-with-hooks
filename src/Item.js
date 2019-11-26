@@ -1,9 +1,9 @@
 import React from "react";
 
-const Item = () => {
+const Item = (props) => {
     return (
         <li>
-            <p>仕事をする</p>
+            <p>{props.todo}</p>
             <button>完了</button>
         </li>
     );
